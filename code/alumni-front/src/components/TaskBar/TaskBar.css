@@ -1,0 +1,116 @@
+.TaskBar {
+  --orange: hsl(5, 85%, 63%);
+  display: flex;
+  flex-direction: row;
+  width: max(80%, 600px);
+  padding-top: 3%;
+  padding-bottom: 3%;
+  max-height: 40px;
+  position: relative;
+}
+
+.TaskBar a {
+  all: unset;
+  padding: 0 5px;
+}
+.TaskBar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.TaskBar > .profile {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  align-items: center;
+  gap: 20px;
+}
+.TaskBar > .profile > * {
+  cursor: pointer;
+}
+
+.TaskBar > .profile > a {
+  height: 50%;
+  width: fit-content;
+}
+
+.TaskBar > .profile svg {
+  height: 100%;
+}
+
+.TaskBar > .profile svg:hover > path {
+  fill: var(--orange);
+}
+.TaskBar > .profile > img {
+  height: 100%;
+  border-radius: 50%;
+}
+.TaskBar > .profile > img:hover {
+  border: 2px solid var(--orange);
+}
+.TaskBar > .paths {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 3ch;
+  transition: 0.3s ease-in-out;
+}
+
+.path {
+  color: hsl(236, 13%, 42%);
+  cursor: pointer;
+}
+
+.path:hover {
+  color: var(--orange);
+}
+
+@media only screen and (max-width: 600px) {
+  .TaskBar.active > .paths {
+    display: flex;
+    margin: 0;
+    position: fixed;
+    inset: 0 0 0 30%;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .TaskBar.active > .paths > button {
+    display: flex;
+  }
+
+  .TaskBar.active > button {
+    display: none;
+  }
+
+  .TaskBar.active {
+    height: 100%;
+    max-height: 100%;
+    position: fixed;
+    background-color: hsla(0, 0%, 0%, 0.5);
+  }
+
+  .TaskBar.active > img {
+    height: 40px;
+  }
+
+  .TaskBar > .paths {
+    display: none;
+  }
+  .TaskBar > button {
+    display: flex;
+  }
+  .path {
+    color: black;
+    font-size: 20px;
+  }
+
+  .paths > button {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+  }
+}

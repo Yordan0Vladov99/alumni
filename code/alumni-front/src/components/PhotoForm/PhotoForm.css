@@ -1,0 +1,94 @@
+.PhotoForm {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  --light_blue: #4671df;
+}
+
+.FormContent {
+  height: 100%;
+}
+.FormContent > img {
+  cursor: pointer;
+  height: 100%;
+  width: auto;
+}
+
+.photoFormContainer {
+  right: 20px;
+  display: none;
+  width: auto;
+  position: absolute;
+}
+
+.photoFormContainer > div {
+  background-color: white;
+  padding: 20px;
+  border-radius: 2rem;
+}
+.photoFormContainer.active img {
+  cursor: pointer;
+}
+
+.photoFormContainer.active.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+.input-container.invalid > input {
+  border-color: hsl(0, 100%, 74%);
+}
+
+.input-container.invalid > svg {
+  display: inline;
+}
+
+.input-container > svg {
+  display: none;
+  position: absolute;
+  margin-left: 90%;
+}
+.PhotoForm input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2ch 3ch 2ch 3ch;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.PhotoForm > input[type="submit"] {
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--light_blue);
+}
+
+.PhotoForm > p {
+  color: hsl(246, 25%, 77%);
+  font-size: 16px;
+}
+
+.PhotoForm > .error-msg {
+  color: hsl(0, 100%, 74%);
+  margin-left: auto;
+}
+.PhotoForm > :last-child {
+  text-align: center;
+}
+
+.PhotoForm > :last-child > b {
+  color: hsl(0, 100%, 74%);
+}

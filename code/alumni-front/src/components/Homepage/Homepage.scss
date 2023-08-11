@@ -1,0 +1,116 @@
+.App {
+  .App-Body {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    & > .description {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      box-sizing: border-box;
+      & > .description-content {
+        width: 60%;
+        padding: 0 3ch;
+      }
+
+      & > .img-container {
+        width: 30%;
+        min-width: 300px;
+        height: auto;
+        & > img {
+          width: 100%;
+        }
+      }
+    }
+
+    .features-section {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+
+      & > .features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .feature {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 3ch;
+          }
+        }
+      }
+    }
+
+    .groups-section {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+
+      & > .groups {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+        gap: 3ch;
+
+        a {
+          all: unset;
+          cursor: pointer;
+        }
+        .group {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 100%;
+            aspect-ratio: 3/2;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .App .App-Body .features-section > .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .App .App-Body .groups-section > .groups {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .App .App-Body > .description {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    & > * {
+      width: 100% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App .App-Body .features-section > .features {
+    grid-template-columns: 1fr;
+  }
+
+  .App .App-Body .groups-section > .groups {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,55 @@
+.request-details {
+  display: flex;
+  flex-direction: column;
+
+  & > img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .details-content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+    .sender-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      img {
+        height: 50px;
+      }
+      span {
+        margin-left: 50px;
+      }
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 21px;
+      font-weight: 600;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+
+      button {
+        width: 50px;
+        text-align: center;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        &.accept {
+          background-color: #c3e88d;
+        }
+        &.reject {
+          background-color: #ff5370;
+        }
+      }
+    }
+  }
+}

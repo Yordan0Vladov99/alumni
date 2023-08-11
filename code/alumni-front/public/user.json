@@ -1,0 +1,31 @@
+{
+  "name": "Yordan Vladov",
+  "email": "yordan_vladov@abv.bg",
+  "profile": "/images/yordan_vladov.jpg",
+  "photos": [
+    {
+      "id": "1",
+      "src": "/images/inset-larger_1050x730_DSC7352.jpg"
+    },
+    {
+      "id": "2",
+      "src": "/images/inset-larger_1050x730_DSC7364.jpg"
+    },
+    {
+      "id": "3",
+      "src": "/images/inset-larger_1050x730_DSC7369.jpg"
+    }
+  ],
+  "groups": [
+    {
+      "id": 0,
+      "name": "UKTC",
+      "imgSrc": "/images/npg-po-kts.jpg"
+    },
+    {
+      "id": 1,
+      "name": "CSE",
+      "imgSrc": "/images/NewAcademicYear14.png"
+    }
+  ]
+}

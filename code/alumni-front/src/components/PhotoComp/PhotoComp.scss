@@ -1,0 +1,87 @@
+.photoComp {
+  position: relative;
+  --light_orange: hsl(36, 100%, 99%);
+  --orange: hsl(5, 85%, 63%);
+  --light_blue: #4671df;
+
+  & > .links {
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    transition: 0.2s;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5%;
+    gap: 10px;
+    display: none;
+    cursor: pointer;
+  }
+
+  &:hover > .links {
+    display: flex;
+  }
+
+  & > .links svg {
+    position: relative;
+    width: 10%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+
+  & > .links svg path {
+    width: 10%;
+    height: 100%;
+  }
+
+  .cartForm {
+    flex-direction: column;
+    background-color: var(--light_orange);
+    position: absolute;
+    width: 20ch;
+    padding: 1ch;
+    border-radius: 5%;
+  }
+  .cartButton {
+    width: 10%;
+    position: relative;
+  }
+  .shareButton {
+    width: 10%;
+    position: relative;
+    & > svg {
+      width: 100%;
+    }
+  }
+  .cartButton button {
+    color: white;
+    border: none;
+    border-radius: 5%;
+    padding: 1ch;
+    background-color: var(--light_blue);
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .cartButton > svg {
+    width: 100%;
+  }
+
+  .cartButton.active > svg path {
+    fill: var(--orange);
+  }
+
+  .cartButton .cartForm {
+    display: none;
+  }
+
+  .cartButton.active .cartForm {
+    display: flex;
+  }
+
+  .photoComp .links:has(.cartButton:hover) {
+    display: flex;
+  }
+}

@@ -1,0 +1,18 @@
+.App {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  --light_orange: hsl(36, 100%, 99%);
+  background-color: var(--light_orange);
+  --orange: hsl(5, 85%, 63%);
+  --light_gray: hsl(236, 13%, 42%);
+  --dark_gray: #00001a;
+  --light_blue: #4671df;
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+}

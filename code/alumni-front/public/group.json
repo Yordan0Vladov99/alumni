@@ -1,0 +1,90 @@
+{
+  "name": "UKTC",
+  "parent": {
+    "id": 5,
+    "name": "TU",
+    "imgSrc": "/images/npg-po-kts.jpg"
+  },
+  "joined": false,
+  "photos": [
+    {
+      "id": "0",
+      "src": "/images/inset-larger_1050x730_DSC7352.jpg",
+      "liked": false
+    },
+    {
+      "id": "1",
+      "src": "/images/inset-larger_1050x730_DSC7364.jpg",
+      "liked": false
+    },
+    {
+      "id": "2",
+      "src": "/images/inset-larger_1050x730_DSC7369.jpg",
+      "liked": false
+    },
+    {
+      "id": "3",
+      "src": "/images/inset-larger_1050x730_DSC7372.jpg",
+      "liked": false
+    },
+    {
+      "id": "4",
+      "src": "/images/inset-larger_1050x730_DSC7378.jpg",
+      "liked": false
+    },
+    {
+      "id": "5",
+      "src": "/images/inset-larger_1050x730_DSC7383.jpg",
+      "liked": false
+    },
+    {
+      "id": "6",
+      "src": "/images/inset-larger_1050x730_DSC7388.jpg",
+      "liked": false
+    },
+    {
+      "id": "7",
+      "src": "/images/inset-larger_1050x730_DSC7395.jpg",
+      "liked": false
+    },
+    {
+      "id": "8",
+      "src": "/images/inset-larger_1050x730_DSC7902.jpg",
+      "liked": false
+    }
+  ],
+  "subgroups": [
+    {
+      "id": 0,
+      "name": "181",
+      "imgSrc": "/images/npg-po-kts.jpg"
+    },
+    {
+      "id": 1,
+      "name": "182",
+      "imgSrc": "/images/npg-po-kts.jpg"
+    },
+    {
+      "id": 2,
+      "name": "183",
+      "imgSrc": "/images/npg-po-kts.jpg"
+    },
+    {
+      "id": 3,
+      "name": "184",
+      "imgSrc": "/images/npg-po-kts.jpg"
+    },
+    {
+      "id": 4,
+      "name": "185",
+      "imgSrc": "/images/npg-po-kts.jpg"
+    }
+  ],
+  "members": [
+    {
+      "id": "barry_b@mail.com",
+      "name": "Barry Berkman",
+      "imgSrc": "/images/image-avatar.png"
+    }
+  ]
+}

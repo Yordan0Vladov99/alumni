@@ -1,0 +1,84 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.mjt.tu:alumni >--------------------------
+[INFO] Building alumni 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:3.1.0:run (default-cli) > test-compile @ alumni >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ alumni ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 11 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ alumni ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ alumni ---
+[INFO] skip non existing resourceDirectory /home/yordan/Projects/IP_Project/alumni/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ alumni ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:3.1.0:run (default-cli) < test-compile @ alumni <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.1.0:run (default-cli) @ alumni ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.0)
+
+2023-06-25T22:44:05.404+03:00  INFO 98244 --- [           main] com.mjt.tu.alumni.AlumniApplication      : Starting AlumniApplication using Java 20.0.1 with PID 98244 (/home/yordan/Projects/IP_Project/alumni/target/classes started by yordan in /home/yordan/Projects/IP_Project/alumni)
+2023-06-25T22:44:05.406+03:00  INFO 98244 --- [           main] com.mjt.tu.alumni.AlumniApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-06-25T22:44:05.684+03:00  INFO 98244 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-25T22:44:05.716+03:00  INFO 98244 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 6 JPA repository interfaces.
+2023-06-25T22:44:05.976+03:00  INFO 98244 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-25T22:44:05.983+03:00  INFO 98244 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-25T22:44:05.983+03:00  INFO 98244 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-25T22:44:06.024+03:00  INFO 98244 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2023-06-25T22:44:06.025+03:00  INFO 98244 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 595 ms
+2023-06-25T22:44:06.082+03:00  INFO 98244 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-25T22:44:06.102+03:00  INFO 98244 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-06-25T22:44:06.103+03:00  INFO 98244 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-06-25T22:44:06.156+03:00  INFO 98244 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-25T22:44:06.207+03:00  INFO 98244 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-25T22:44:06.214+03:00  INFO 98244 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-25T22:44:06.259+03:00  INFO 98244 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@29bbc391
+2023-06-25T22:44:06.260+03:00  INFO 98244 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-25T22:44:06.277+03:00  INFO 98244 --- [           main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.MariaDBDialect, version: 10.11
+2023-06-25T22:44:06.393+03:00  INFO 98244 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-25T22:44:06.629+03:00  INFO 98244 --- [           main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.mjt.tu.alumni.models.ItemRequest (class must be instantiated by Interceptor)
+2023-06-25T22:44:06.754+03:00  INFO 98244 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: alter table if exists album modify column price  float(53) not null
+Hibernate: alter table if exists item_requests modify column created  datetime(6)
+Hibernate: alter table if exists item_requests modify column status  enum ('Accepted','Denied','Pending')
+Hibernate: alter table if exists item_requests modify column price  float(53) not null
+Hibernate: alter table if exists photo modify column created  datetime(6)
+Hibernate: alter table if exists photo_session modify column created  datetime(6)
+Hibernate: alter table if exists photo_session modify column status  enum ('Accepted','Denied','Pending')
+Hibernate: alter table if exists photo_session modify column session_date  datetime(6)
+Hibernate: alter table if exists user modify column type  enum ('ROLE_ADMIN','ROLE_PHOTOGRAPHER','ROLE_USER')
+2023-06-25T22:44:07.475+03:00  INFO 98244 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-25T22:44:07.688+03:00  WARN 98244 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-25T22:44:07.804+03:00  INFO 98244 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d1973e8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ca10d0e, org.springframework.security.web.context.SecurityContextHolderFilter@2ecf4b3e, org.springframework.security.web.header.HeaderWriterFilter@502b9399, org.springframework.security.web.authentication.logout.LogoutFilter@66b3eab0, com.mjt.tu.alumni.security.config.JwtAuthenticationFilter@16cbba0f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5364b481, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d3a2459, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34604b32, org.springframework.security.web.session.SessionManagementFilter@490704a5, org.springframework.security.web.access.ExceptionTranslationFilter@21dd91da, org.springframework.security.web.access.intercept.AuthorizationFilter@2d1f9ec3]
+2023-06-25T22:44:07.894+03:00  INFO 98244 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2023-06-25T22:44:07.899+03:00  INFO 98244 --- [           main] com.mjt.tu.alumni.AlumniApplication      : Started AlumniApplication in 2.671 seconds (process running for 2.825)
+2023-06-25T22:44:11.171+03:00  INFO 98244 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-25T22:44:11.171+03:00  INFO 98244 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-25T22:44:11.172+03:00  INFO 98244 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: select g1_0.id,g1_0.name,p1_0.id,p1_0.name,p1_0.parent_id,p3_0.name,p3_0.created,p3_0.extension,p3_0.group_id,p3_0.user_id,p1_0.selected,p4_0.name,p4_0.created,p4_0.extension,g3_0.id,g3_0.name,g3_0.parent_id,g3_0.photo_id,g3_0.selected,u2_0.id,u2_0.name,u2_0.password,u2_0.profile_picture,u2_0.type,g1_0.selected from alumni_group g1_0 left join alumni_group p1_0 on p1_0.id=g1_0.parent_id left join photo p3_0 on p3_0.name=p1_0.photo_id left join photo p4_0 on p4_0.name=g1_0.photo_id left join alumni_group g3_0 on g3_0.id=p4_0.group_id left join user u2_0 on u2_0.id=p4_0.user_id where g1_0.id=?
+Hibernate: select p1_0.group_id,p1_0.name,p1_0.created,p1_0.extension,u1_0.id,u1_0.name,u1_0.password,p2_0.name,p2_0.created,p2_0.extension,p2_0.group_id,p2_0.user_id,u1_0.type from photo p1_0 left join user u1_0 on u1_0.id=p1_0.user_id left join photo p2_0 on p2_0.name=u1_0.profile_picture where p1_0.group_id=?
+2023-06-25T22:44:21.265+03:00  INFO 98244 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-25T22:44:21.266+03:00  INFO 98244 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-25T22:44:21.268+03:00  INFO 98244 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.849 s
+[INFO] Finished at: 2023-06-25T22:44:21+03:00
+[INFO] ------------------------------------------------------------------------

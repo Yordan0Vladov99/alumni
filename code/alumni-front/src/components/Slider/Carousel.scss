@@ -1,0 +1,57 @@
+.carousel {
+  width: max(80%, 800px);
+  .scroll {
+    position: relative;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: mandatory;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  .item {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .itemSnapPoint {
+    scroll-snap-align: start;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nextPrevButton {
+  }
+  button {
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border: none;
+  }
+  .nextPrevButtonDisabled {
+    opacity: 0.3;
+  }
+
+  .pagination {
+    display: flex;
+  }
+
+  .paginationButton {
+    margin: 10px;
+  }
+
+  .paginationButtonActive {
+    opacity: 0.3;
+  }
+  .pageIndicator {
+    display: "flex";
+    justify-content: "center";
+  }
+}

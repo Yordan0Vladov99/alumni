@@ -1,0 +1,20 @@
+{
+  "photos": [
+    {
+      "id": 0,
+      "src": "/images/inset-larger_1050x730_DSC7352.jpg"
+    },
+    {
+      "id": 1,
+      "src": "/images/inset-larger_1050x730_DSC7364.jpg"
+    },
+    {
+      "id": 2,
+      "src": "/images/inset-larger_1050x730_DSC7369.jpg"
+    },
+    {
+      "id": 3,
+      "src": "/images/inset-larger_1050x730_DSC7372.jpg"
+    }
+  ]
+}

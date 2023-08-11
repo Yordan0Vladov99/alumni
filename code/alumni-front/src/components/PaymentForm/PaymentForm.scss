@@ -1,0 +1,79 @@
+.PaymentForm {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  max-width: 60ch;
+  background-color: white;
+  border-radius: 15px;
+
+  .validAndCVC {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    text-align: left;
+    margin: 0;
+    font-size: 24px;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+.input-container.invalid > input {
+  border-color: hsl(0, 100%, 74%);
+}
+
+.input-container.invalid > svg {
+  display: inline;
+}
+
+.input-container > svg {
+  display: none;
+  position: absolute;
+  margin-left: 90%;
+}
+.PaymentForm input,
+select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2ch 3ch 2ch 3ch;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.PaymentForm select {
+  background-color: white;
+}
+
+.PaymentForm input[type="submit"] {
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: hsl(154, 59%, 51%);
+}
+
+.PaymentForm > p {
+  color: hsl(246, 25%, 77%);
+  font-size: 16px;
+  text-align: center;
+  a {
+    all: unset;
+    cursor: pointer;
+    b {
+      color: hsl(0, 100%, 74%);
+    }
+  }
+}
+
+.PaymentForm .error-msg {
+  color: hsl(0, 100%, 74%);
+  margin-left: auto;
+}

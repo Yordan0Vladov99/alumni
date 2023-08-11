@@ -1,0 +1,61 @@
+.App {
+  .checkoutSection {
+    width: max(80%, 500px);
+    display: flex;
+    flex-direction: row;
+  }
+
+  .paymentContainer {
+    position: fixed;
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    & > .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    &.active {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .total-section {
+    background-color: #fafafb;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 3ch;
+    height: fit-content;
+
+    .total {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    button {
+      color: white;
+      background-color: var(--orange);
+      padding: 10px;
+      font-size: 24px;
+      border: 2px solid white;
+      border-radius: 10px;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+  }
+}
