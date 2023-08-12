@@ -1,12 +1,13 @@
 .Register {
   font-family: "Poppins", sans-serif;
   width: 100%;
-  height: 100%;
   gap: 3%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: relative;
+  margin: auto;
 }
 
 .Register > div {
